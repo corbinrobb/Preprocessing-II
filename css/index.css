@@ -179,6 +179,7 @@ hr {
 }
 a {
   font-size: 1.6rem;
+  text-decoration: none;
 }
 .nav-bar {
   display: flex;
@@ -217,7 +218,6 @@ a {
   }
 }
 .nav-bar nav a {
-  text-decoration: none;
   color: black;
 }
 .nav-bar nav a:hover {
@@ -257,12 +257,28 @@ a {
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+  transition: transform 0.4s;
+}
+.home .content-section .img-content:hover {
+  transform: scale(1.2);
 }
 @media (max-width: 800px) {
   .home .content-section .img-content {
     width: 100%;
     padding: 2% 0;
     text-align: center;
+    transition: transform 0.4s;
+  }
+  .home .content-section .img-content:hover {
+    transform: scale(1.2);
+  }
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    transition: transform 0.4s;
+  }
+  .home .content-section .img-content:hover {
+    transform: scale(1);
   }
 }
 .home .content-section .img-content img {

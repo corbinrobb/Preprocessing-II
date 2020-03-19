@@ -16,3 +16,11 @@
   text-align: center;
   border-radius: 1.6rem;
 }
+
+.grow(@string){
+  transition: transform .4s; 
+  
+  &:hover {
+    transform: scale(@string);
+  }
+}

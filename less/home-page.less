@@ -27,20 +27,25 @@
     .img-content {
       width: 48%;
       padding-left: 1%;
+      .grow(1.2);
 
       @media @tablet {
         width: 100%;
         padding: 2% 0;
         text-align: center;
+        .grow(1.2);
+      }
+
+      @media @mobile {
+        .grow(1);
       }
 
       img {
         border-radius: 10px;
-
+        
         @media @mobile {
           width: 100%;
         }
-        
       }
     }
   }
