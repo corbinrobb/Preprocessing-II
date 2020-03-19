@@ -1,1 +1,19 @@
 // Navigation Styles here
+.nav-bar {
+   .flex(@just: space-between);
+   padding: 2% 0;
+
+   nav {
+     width: 60%;
+     .flex(@just: space-around, @align: center);
+     
+     a {
+       text-decoration: none;
+       color: black;
+
+       &:hover {
+         color: lightblue;
+       }
+     }
+   }
+}
