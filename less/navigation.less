@@ -1,1 +1,35 @@
 // Navigation Styles here
+.nav-bar {
+   .flex(@just: space-between);
+   padding: 2% 0;
+
+   @media @tablet {
+     padding: 2% 5%;
+   }
+
+   @media @mobile {
+     .flex(@dir: column, @align: center);
+
+     h1 {
+       font-size: 3.2rem;
+       padding-bottom: 2%;
+     }
+   } // @mobile
+
+   nav {
+     width: 60%;
+     .flex(@just: space-around, @align: center);
+
+     @media @mobile {
+       width: 100%;
+     }
+     
+     a {
+       color: black;
+
+       &:hover {
+         color: lightblue;
+       }
+     } //a
+   } // nav
+} // .nav-bar
